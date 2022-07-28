@@ -1,0 +1,151 @@
+header{
+    width: 100%;
+    height: 70px;
+    justify-content: space-between;
+    box-shadow: #464246;
+    margin-top: -10px;
+    position:fixed;
+    z-index: 1;
+
+}
+.shadow{
+    width: 100%;
+    height: 85px;
+    
+}
+.name{
+    height: 50px;
+    width: 150px;
+}
+.logo{
+    height: 65px;
+    width: 65px;
+}
+.navbar-nav{
+    justify-content: left;
+    overflow: hidden;
+
+}
+ul{
+    list-style-type: none;
+}
+#offcanvasNavbar{
+    font-family: 'BIZ UDPMincho', serif;
+    font-size: larger;
+    margin-top: 5px;
+   padding-right: 10px;
+}
+.cart3{
+    width: 35px;
+    height: 32px;
+    font-size: 36px;
+    margin-left: 3%;
+}
+.card-banner{
+    padding-top: 40%;
+    margin-left:10%;
+}
+.buho-lector{
+    margin-top: 10%;
+    margin-left: 25%;
+}
+.dispositivos{
+    margin-left: 15%;
+    margin-top:5%;
+}
+
+/* --- TIENDA --- */
+.tienda{
+    padding-top: 8%;
+    text-align: center;
+    font-size: 60px;
+}
+#libros{
+    padding-left:10%;    
+    font-size: 15px;
+    padding-top:4%;
+}
+.carrito{
+    text-align: right;
+    margin-right: 5%;
+    margin-top:-5%;
+}
+#merch{
+    padding-left:10%;    
+    font-size: 15px;
+    padding-top:4%;
+}
+.mb-5 {
+    margin-bottom: 10% !important;
+}
+.card-book{
+    background-color: #bbaab8;
+    clear: both;
+    display: block;
+    text-align: center;
+    z-index: 0;
+}
+.cart-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+}
+
+.cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    z-index: 3;
+    padding: 1.5rem;
+    transform: translateX(100%);
+}
+
+.show-cart {
+    transform: translateX(0);
+}
+
+/* --- MI CUENTA --- */
+.container{
+    padding-top: 5%;
+    
+}
+#idForm{
+    border: solid 5px #292643;
+    background-color: rgba(187, 170, 184);
+    width: 580px;
+    height: 500px;
+    margin-left:27%;
+}
+.registrarse{
+    padding-top: 10%;
+    text-align: center;
+    text-decoration: underline;
+}
+#iniciarSesion{
+    padding-top: 3%;
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 3%;
+}
+#infoUsuarios{
+    width: auto;
+    height: auto;
+    margin-left:42%;
+    margin-top:-7%;
+    margin-bottom: 5%;
+}
+#botonUsuarios{
+    width: auto;
+    height: auto;
+    margin-left:44%;
+
+}
+#divUsuarios{
+    font-size: 20px;
+}
