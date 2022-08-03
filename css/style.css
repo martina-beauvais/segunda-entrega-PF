@@ -85,6 +85,80 @@ ul{
     text-align: center;
     z-index: 0;
 }
+.bi-cart3{
+    font-size:27px;
+    padding-left:-30px;
+}
+.borrar-curso {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+
+#encabezado {
+    margin: 30px 0;
+}
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito{
+    display: none;
+}
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right:0;
+
+    top:100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
+.vacio {
+    padding: 10px;
+    background-color: crimson;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+.contenido-hero {
+    margin-top: 80px;
+    color: white;
+}
+.contenido-hero form {
+    position: relative;
+    margin-bottom: 0;
+}
+.contenido-hero form #buscador {
+    height: 50px;
+    margin-bottom: 0;
+}
+.contenido-hero form .submit-buscador {
+    position: absolute;
+    right:0;
+    top:0;
+    height: 100%;
+    padding: 0;
+    display: block;
+    text-indent: -9999px;
+    width: 50px;
+    background-image: url(../img/lupa.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    border:none;
+}
+
+
 
 /* --- MI CUENTA --- */
 .container{
@@ -120,8 +194,77 @@ ul{
     width: auto;
     height: auto;
     margin-left:44%;
+    margin-bottom: 10%;
 
 }
 #divUsuarios{
     font-size: 20px;
 }
+/* --- FOOTER --- */
+
+.footer {
+    height: auto;
+    width: 100%;
+    background-color: rgba(187, 170, 184);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: top; 
+}
+.footer__name {
+    margin-top: -30px;
+    margin-left: 10px;
+    height: 50px;
+    width: 150px; 
+}
+.logo__footer {
+    height: 60px;
+    width: 60px;
+    margin-top: -30px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.col {
+    background-color: rgba(187, 170, 184); 
+}
+.col .h3 {
+    background-color: rgba(187, 170, 184);
+    text-decoration: underline;
+    font-size: 30px;
+    margin-left: 5%;
+}
+.col .item-one {
+    background-color: rgba(187, 170, 184);
+    font-size: 19px;
+    text-align: justify; 
+    margin-left: 10%;
+}
+.col .item-one .footer__nav {
+    color: black;
+    text-decoration: none;
+}
+.col .item-one .footer__nav .bi-envelope-fill {
+    color: white; 
+}
+.col .item-one .footer__nav .bi bi-twitter {
+    color: white; 
+}
+.col .item-one .footer__nav .bi bi-instagram {
+    color: white; 
+}
+.col .item-one .footer__nav .bi bi-whatsapp {
+    color: white; 
+}
+.col .item-two {
+    font-size: 19px;
+    margin-left: 10%;
+}
+.col .item-two .footer__nav {
+    color: black;
+    text-decoration: none;}
+.copyright {
+    background-color: rgba(187, 170, 184);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px; }

@@ -1,3 +1,12 @@
+class Producto {
+    constructor(id, nombre, precio, stock, imagen) {
+        this.id = id
+        this.nombre = nombre
+        this.precio = precio
+        this.stock = stock
+        this.imagen = imagen
+    }
+}
 const producto = [
     {id: 0, nombre: "Una Eduación Mortal", autor: "Naomi Novik", precio: "350", stock: "456", imagen:"../imagenes/libros/Una-Educacion-Mortal-Naomi-Novik.png"},
     {id: 1, nombre: "Lore", autor:"Alexandra Bracken", precio: "400", stock:"1500", imagen: "../imagenes/libros/lore.jpg.png"},
