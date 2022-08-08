@@ -6,7 +6,7 @@ header{
     margin-top: -10px;
     position:fixed;
     z-index: 1;
-
+    
 }
 .shadow{
     width: 100%;
@@ -28,19 +28,16 @@ header{
 }
 ul{
     list-style-type: none;
+    text-decoration: none;
 }
+
 #offcanvasNavbar{
     font-family: 'BIZ UDPMincho', serif;
     font-size: larger;
     margin-top: 5px;
    padding-right: 10px;
 }
-.cart3{
-    width: 35px;
-    height: 32px;
-    font-size: 36px;
-    margin-left: 3%;
-}
+
 .card-banner{
     padding-top: 40%;
     margin-left:10%;
@@ -60,21 +57,17 @@ ul{
     text-align: center;
     font-size: 60px;
 }
-#libros{
-    padding-left:10%;    
+
+#productosEnCarrito{
+    margin-left:15%;
+    margin-right:15%;    
     font-size: 15px;
     padding-top:4%;
 }
-.carrito{
-    text-align: right;
-    margin-right: 5%;
-    margin-top:-5%;
+.card-body{
+    text-align: center;
 }
-#merch{
-    padding-left:10%;    
-    font-size: 15px;
-    padding-top:4%;
-}
+
 .mb-5 {
     margin-bottom: 10% !important;
 }
@@ -85,80 +78,14 @@ ul{
     text-align: center;
     z-index: 0;
 }
-.bi-cart3{
-    font-size:27px;
-    padding-left:-30px;
-}
-.borrar-curso {
-    background-color: red;
-    border-radius: 50%;
-    padding: 5px 10px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+.carrito{
+    margin-left:90%;
 }
 
-ul {
-    list-style: none;
+.carrito-html{
+    padding-left: 10%;
+    padding-right: 10%;
 }
-
-#encabezado {
-    margin: 30px 0;
-}
-.submenu {
-    position: relative;
-}
-
-.submenu #carrito{
-    display: none;
-}
-.submenu:hover #carrito{
-    display: block;
-    position: absolute;
-    right:0;
-
-    top:100%;
-    z-index: 1;
-    background-color: white;
-    padding: 20px;
-    min-height: 400px;
-    min-width: 300px;
-}
-.vacio {
-    padding: 10px;
-    background-color: crimson;
-    text-align: center;
-    border-radius: 10px;
-    color: white;
-}
-.contenido-hero {
-    margin-top: 80px;
-    color: white;
-}
-.contenido-hero form {
-    position: relative;
-    margin-bottom: 0;
-}
-.contenido-hero form #buscador {
-    height: 50px;
-    margin-bottom: 0;
-}
-.contenido-hero form .submit-buscador {
-    position: absolute;
-    right:0;
-    top:0;
-    height: 100%;
-    padding: 0;
-    display: block;
-    text-indent: -9999px;
-    width: 50px;
-    background-image: url(../img/lupa.png);
-    background-position: right center;
-    background-repeat: no-repeat;
-    border:none;
-}
-
-
 
 /* --- MI CUENTA --- */
 .container{

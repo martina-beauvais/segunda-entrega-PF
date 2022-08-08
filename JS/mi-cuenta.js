@@ -28,14 +28,24 @@ formUsuario.addEventListener('submit', (e) => {
    let usuario = new Usuario(username,email)
    
    localStorage.setItem('Usuario', JSON.stringify(usuarios))
+//SWEETALERT2 => Alert de bienvenida para el usuario con su username.
+   Swal.fire({
+    title: `¡Bienvenido, ${usuario.username}!`,
+    confirmButtonText: '¡Gracias!',
+    width: 600,
+    padding: '3em',
+    color: 'black',
+    background: '#fff url(../imagenes/img-extras/buho-lector-bienvenida.png)', 
+  })
+  
+
    usuarios.push(usuario)
    console.log(usuarios)
    formUsuario.reset()
 
    mostrarUsuario(usuario);
-
 })
-
+/*
 const botonUsuarios = document.getElementById("botonUsuarios")
 const divUsuarios = document.getElementById("divUsuarios")
 
@@ -59,4 +69,4 @@ const mostrarUsuario = (usuario) => {
             <p class="resultado"> Email: ${usuario.email} </p>`;
     resultado.innerHTML = aux;
 }
-
+*/
