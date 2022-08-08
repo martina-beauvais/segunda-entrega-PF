@@ -81,6 +81,10 @@ ul{
 .carrito{
     margin-left:90%;
 }
+.offcanvas-header{
+    background-color: #e99e75;
+
+}
 
 .carrito-html{
     padding-left: 10%;
