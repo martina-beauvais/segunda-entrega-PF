@@ -85,8 +85,6 @@ function renderizarProductos() {
 }
 
 function añadirProductoAlCarrito(evento) {
-    evento.preventDefault()
-
     carrito.push(evento.target.getAttribute('marcador'));
     renderizarCarrito();
 
@@ -112,7 +110,6 @@ function añadirProductoAlCarrito(evento) {
 }
 
 function renderizarCarrito() {
-  
     // Vaciamos todo el html
     carritoId.textContent = '';
     // Quitamos los duplicados
@@ -149,7 +146,6 @@ function renderizarCarrito() {
 }
 
 function borrarItemCarrito(evento) {
-     evento.preventDefault()
 
     const id = evento.target.dataset.item;
     //SWEETALERT2 => Muestro un alert de confirmación, para prevenir borrar un producto por accidente.
@@ -206,7 +202,6 @@ function calcularTotal() {
 
 
 function vaciarCarrito() {
-  evento.preventDefault()
 
     //SWEETALERT2 => Muestro un alert de confirmación, para prevenir borrar todos los productos en el carrito por accidente.
     const swalWithBootstrapButtons = Swal.mixin({
