@@ -8,16 +8,15 @@ class Usuario {
     }
 }
 
-let usuarios = []
+const usuarios = []
 
-if(localStorage.getItem('usuarios')) {
+/*if(localStorage.getItem('usuarios')) {
     usuarios = JSON.parse(localStorage.getItem('usuarios'))
 } else {
     localStorage.setItem('usuarios', JSON.stringify(usuarios))
-}
+}*/
 
 const formUsuario = document.getElementById("idForm")
-
 
 formUsuario.addEventListener('submit', (e) => {
     e.preventDefault()
@@ -25,10 +24,12 @@ formUsuario.addEventListener('submit', (e) => {
    const username = document.getElementById("username").value;
    const email = document.getElementById("email").value
 
-   let usuario = new Usuario(username,email)
-   
+   const usuario = new Usuario(username,email)
+      usuarios.push(usuario)
+
    localStorage.setItem('Usuario', JSON.stringify(usuarios))
-//SWEETALERT2 => Alert de bienvenida para el usuario con su username.
+
+   //SWEETALERT2 => Alert de bienvenida para el usuario con su username.
    Swal.fire({
     title: `¡Bienvenido, ${usuario.username}!`,
     confirmButtonText: '¡Gracias!',
@@ -38,12 +39,9 @@ formUsuario.addEventListener('submit', (e) => {
     background: '#fff url(../imagenes/img-extras/buho-lector-bienvenida.png)', 
   })
   
-
-   usuarios.push(usuario)
    console.log(usuarios)
    formUsuario.reset()
 
-   mostrarUsuario(usuario);
 })
 /*
 const botonUsuarios = document.getElementById("botonUsuarios")
