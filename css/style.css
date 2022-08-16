@@ -26,6 +26,12 @@ header{
     overflow: hidden;
 
 }
+.d-flex{
+    margin-bottom:2%;
+}
+.perfilUsuario{
+    margin-bottom: 2%;
+}
 ul{
     list-style-type: none;
     text-decoration: none;
@@ -91,12 +97,29 @@ ul{
     padding-right: 10%;
 }
 
+
 /* --- MI CUENTA --- */
-.container{
+#container{
     padding-top: 5%;
-    
+}
+#containerPerfil{
+    padding-top:15%;
+    padding-bottom: 15%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#gradientCustom{
+    background: linear-gradient(#e99e75,#292643)
 }
 #idForm{
+    border: solid 5px #292643;
+    background-color: rgba(187, 170, 184);
+    width: 580px;
+    height: 700px;
+    margin-left:27%;
+}
+#idFormIS{
     border: solid 5px #292643;
     background-color: rgba(187, 170, 184);
     width: 580px;
@@ -130,6 +153,17 @@ ul{
 }
 #divUsuarios{
     font-size: 20px;
+}
+
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #f6d365;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1))
 }
 /* --- FOOTER --- */
 

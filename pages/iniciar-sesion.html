@@ -54,11 +54,6 @@
                                         Tienda
                                     </a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="./mi-cuenta.html">
-                                        Mi cuenta
-                                    </a>
-                                </li>
                             </ul>
                             <form class="d-flex">
                                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -84,7 +79,7 @@
     <main>
         <h2 class="registrarse"> Iniciar Sesión </h2>
         <div class="container">
-            <form id="idForm" class="row g-3 p-5">
+            <form id="idFormIS" class="row g-3 p-5">
                 <div class="col-12">
                     <label for="idFirst" class="form-label">Nombre de usuario</label>
                     <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
@@ -102,31 +97,18 @@
                     <input type="password" class="form-control" id="contraseña" required>
                 </div>
                 <div class="col-12">
-                    <button class="btn btn-outline-dark" type="submit">Crear usuario</button>
+                    <button class="btn btn-outline-dark" type="submit">Iniciar Sesión</button>
                 </div>
             </form>
         </div>
         <div id="iniciarSesion">
             <a href="./iniciar-sesion.html">¿Olvidaste la contraseña?</a>
-            <br>
-            <br>
+            
             <p>
                 ¿Todavía no tienes una cuenta? 
                 <a href="./registrarse.html">¡Regristrate!</a>
             </p>
         </div>
-        <!--
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center" id="infoUsuarios"></div>
-            </div>
-            <button class="btn btn-dark" id="botonUsuarios">Mostrar Usuarios</button>
-            <div class="row">
-                <div id= "divUsuarios"></div>
-            </div>
-            
-        </div>           
-        -->
     </main>
     <footer> 
         <!--Pie de Página-->
@@ -201,7 +183,8 @@
         
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script src="../JS/mi-cuenta.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../JS/mi-cuenta.js"></script>
+
 
 </body>

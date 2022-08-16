@@ -69,7 +69,7 @@
     </header>
     <main>
         <h2 class="registrarse"> Registrarse </h2>
-        <div class="container">
+        <div id="container">
             <form id="idForm" class="row g-3 p-5">
                 <div class="col-12">
                     <label for="idFirst" class="form-label">Nombre de usuario</label>
@@ -78,6 +78,14 @@
                       <div class="input-group-text">@</div>
                       <input type="text" class="form-control" id="username" placeholder="Username" name="username" required>
                     </div>
+                </div>
+                <div class="col-12">
+                    <label for="text" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                </div>
+                <div class="col-12">
+                    <label for="text" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido" required>
                 </div>
                 <div class="col-12">
                     <label for="inputEmail4" class="form-label">Email</label>
@@ -96,18 +104,6 @@
             <p>¿Ya tienes una cuenta?</p>
             <a href="./iniciar-sesion.html">Iniciar Sesión</a>
         </div>
-        <!--
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center" id="infoUsuarios"></div>
-            </div>
-            <button class="btn btn-dark" id="botonUsuarios">Mostrar Usuarios</button>
-            <div class="row">
-                <div id= "divUsuarios"></div>
-            </div>
-            
-        </div>           
-        -->
     </main>
     <footer> 
         <!--Pie de Página-->
