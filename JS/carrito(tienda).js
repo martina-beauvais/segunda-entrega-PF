@@ -24,19 +24,16 @@ const productos = [
   {id: 12, nombre: "Eleanor & Park", autor: "Rainbow Rowell", precio: 956, stock: 875, imagen: "../imagenes/libros/eleanor-&-park-rainbow-rowell.png"},
   {id: 13, nombre: "It Ends With Us", autor: "Colleen Hoover", precio: 876, stock: 547, imagen: "../imagenes/libros/it-ends-with-us-colleen-hoover.png"},  
   {id: 14, nombre: "Un Cuento Perfecto", autor: "Elísabet Benavent", precio: 899, stock: 438, imagen: "../imagenes/libros/un-cuento-perfecto-elísabet-benavent.png"},
-  {id: 50, nombre: "Positions Hat - Ariana Grande", precio: 850, stock: 102, imagen: "../imagenes/merch/positions-hat-ariana-grande.png"},
-  {id: 51, nombre: "Levitating - Dua Lipa", precio: 800,stock: 240,imagen: "../imagenes/merch/dua-lipa-eco-friendly-bag.png"},
-  {id: 52, nombre: "Heartstopper (Hi)", precio: 750,stock: 50,imagen: "../imagenes/merch/Heartstopper-hi.jpg.png"},
-  {id: 53, nombre: "1989 - Taylor Swift, Crewneck Sweatshirt", precio: 1500,stock: 1323,imagen: "../imagenes/merch/Taylor-Swift-Crewneck-Sweatshirt.png"},
-  {id: 54, nombre: "Heartstopper - Eco Bag", precio: 875, stock: 412, imagen: "../imagenes/merch/heartstopper-eco-bag.jpg"},
-  {id: 55, nombre: "Pisces - Eco Bag", precio: 417, stock: 43, imagen: "../imagenes/merch/pisces-zodiac-eco-bag.png"},
-  {id: 56, nombre: "Future Nostalgia - Dua Lipa", precio: 2500, stock: 135, imagen: "../imagenes/merch/dua-lipa-vinilo-future-nostalgia.png"},
-  {id: 57, nombre: "Fearless (Taylor's Version)", precio: 3200, stock: 13, imagen: "../imagenes/merch/taylor-swift-vinilo-fearless(ts).png"},
-  {id: 58, nombre: "CALM - 5SOS (CD)", precio: 1500, stock: 452, imagen: "../imagenes/merch/calm-5sos-cd.png"},
-  {id: 59, nombre: "Olivia Rodrigo - Hat", precio:600, stock: 4324, imagen: "../imagenes/merch/OR-hat.png"},
-  {id: 60, nombre: "Fine Line - Hoodie - Harry Styles", precio:5450, stock: 867, imagen: "../imagenes/merch/Fine-Line-Hoodie-Harry-Styles.png"},
-  {id: 61, nombre: "Blackpink", precio:5700, stock: 237, imagen: "../imagenes/merch/BP-vinilo.png"}
+  {id: 50, nombre: "Levitating - Dua Lipa", precio: 800,stock: 240,imagen: "../imagenes/merch/dua-lipa-eco-friendly-bag.png"},
+  {id: 51, nombre: "Heartstopper (Hi)", precio: 750,stock: 50,imagen: "../imagenes/merch/Heartstopper-hi.jpg.png"},
+  {id: 52, nombre: "Heartstopper - Eco Bag", precio: 875, stock: 412, imagen: "../imagenes/merch/heartstopper-eco-bag.jpg"},
+  {id: 53, nombre: "Pisces - Eco Bag", precio: 417, stock: 43, imagen: "../imagenes/merch/pisces-zodiac-eco-bag.png"},
+  {id: 54, nombre: "Future Nostalgia - Dua Lipa", precio: 2500, stock: 135, imagen: "../imagenes/merch/dua-lipa-vinilo-future-nostalgia.png"},
+  {id: 55, nombre: "Fearless (Taylor's Version)", precio: 3200, stock: 13, imagen: "../imagenes/merch/taylor-swift-vinilo-fearless(ts).png"},
+  {id: 56, nombre: "CALM - 5SOS (CD)", precio: 1500, stock: 452, imagen: "../imagenes/merch/calm-5sos-cd.png"},
+  {id: 57, nombre: "Blackpink", precio:5700, stock: 237, imagen: "../imagenes/merch/BP-vinilo.png"}
 ]
+
 let carrito = []
 
 const divisa = '$';
@@ -80,84 +77,9 @@ function renderizarProductos() {
         miNodoCardBody.appendChild(miNodoBoton);
         miNodo.appendChild(miNodoCardBody);
         productosEnElCarrito.appendChild(miNodo);
+
     });
 }
-
-
-/*fetch('../JSON/productos.json')
-.then(response => response.json())
-.then(productos => {
-  productos.forEach((info) => {
-        // Estructura
-        const miNodo = document.createElement('div');
-        miNodo.classList.add( 'mb-5', 'col-10', 'col-sm-4');
-        // Body
-        const miNodoCardBody = document.createElement('div');
-        miNodoCardBody.classList.add('card-body', 'width=18rem');
-        // Titulo
-        const miNodoTitle = document.createElement('h4');
-        miNodoTitle.classList.add('card-title');
-        miNodoTitle.textContent = info.nombre;
-        // Imagen
-        const miNodoImagen = document.createElement('img');
-        miNodoImagen.classList.add('img-fluid');
-        miNodoImagen.setAttribute('src', info.imagen);
-        // Precio
-        const miNodoPrecio = document.createElement('h5');
-        miNodoPrecio.classList.add('card-text');
-        miNodoPrecio.textContent = `${divisa}${info.precio}`;
-        // Boton 
-        const miNodoBoton = document.createElement('button');
-        miNodoBoton.classList.add('btn', 'btn-outline-dark');
-        miNodoBoton.textContent = 'Agregar al carrito +';
-        miNodoBoton.setAttribute('informacion', info.id);
-        miNodoBoton.addEventListener('click', añadirProductoAlCarrito);
-        // Insertamos
-        miNodoCardBody.appendChild(miNodoImagen);
-        miNodoCardBody.appendChild(miNodoTitle);
-        miNodoCardBody.appendChild(miNodoPrecio);
-        miNodoCardBody.appendChild(miNodoBoton);
-        miNodo.appendChild(miNodoCardBody);
-        productosEnElCarrito.appendChild(miNodo);
-    });
-})
-
-async function renderizarProductos(){
-  const productos = await fetch('../JSON/productos.json')
-  const productosParseados = await productos.json()
-  productosParseados.forEach((info) => {
-    // Estructura
-    const miNodo = document.createElement('div');
-    miNodo.classList.add( 'mb-5', 'col-10', 'col-sm-4');
-    // Body
-    const miNodoCardBody = document.createElement('div');
-    miNodoCardBody.classList.add('card-body', 'width=18rem');
-    // Titulo
-    const miNodoTitle = document.createElement('h4');
-    miNodoTitle.classList.add('card-title');
-    miNodoTitle.textContent = info.nombre;
-    // Imagen
-    const miNodoImagen = document.createElement('img');
-    miNodoImagen.classList.add('img-fluid');
-    miNodoImagen.setAttribute('src', info.imagen);
-    // Precio
-    const miNodoPrecio = document.createElement('h5');
-    miNodoPrecio.classList.add('card-text');
-    miNodoPrecio.textContent = `${divisa}${info.precio}`;
-    // Boton 
-    const miNodoBoton = document.createElement('button');
-    miNodoBoton.classList.add('btn', 'btn-outline-dark');
-    miNodoBoton.textContent = 'Agregar al carrito +';
-    miNodoBoton.setAttribute('informacion', info.id);
-    miNodoBoton.addEventListener('click', añadirProductoAlCarrito);
-    // Insertamos
-    miNodoCardBody.appendChild(miNodoImagen);
-    miNodoCardBody.appendChild(miNodoTitle);
-    miNodoCardBody.appendChild(miNodoPrecio);
-    miNodoCardBody.appendChild(miNodoBoton);
-    miNodo.appendChild(miNodoCardBody);
-    productosEnElCarrito.appendChild(miNodo);
-})}*/
 
 
 function añadirProductoAlCarrito(evento) {
@@ -184,6 +106,7 @@ function añadirProductoAlCarrito(evento) {
         icon: 'success',
         title: 'Producto añadido al carrito'
     }).showToast();
+
 }
 
 function renderizarCarrito() {
@@ -219,10 +142,11 @@ function renderizarCarrito() {
     });
     // Renderizamos el precio total en el HTML
     total.textContent = calcularTotal();
+    localStorage.setItem("Carrito", JSON.stringify(carrito))
+
 }
 
 function borrarItemCarrito(evento) {
-
     const id = evento.target.dataset.item;
     //SWEETALERT2 => Muestro un alert de confirmación, para prevenir borrar un producto por accidente.
     const swalWithBootstrapButtons = Swal.mixin({
@@ -246,7 +170,6 @@ function borrarItemCarrito(evento) {
             '¡Eliminado!',
             'El producto ha sido removido',
             'success',
-
             carrito = carrito.filter((carritoId) => {
                 return carritoId !== id;
             }),
@@ -257,10 +180,11 @@ function borrarItemCarrito(evento) {
             'Cancelado',
             'El producto no ha sido removido',
             'error'
-
           )
         }
       });
+      localStorage.setItem("Carrito", JSON.stringify(carrito))
+
     // volvemos a renderizar
 }
 
@@ -274,6 +198,8 @@ function calcularTotal() {
         // Los sumamos al total
         return total + miItem[0].precio;
     }, 0).toFixed(2);
+    localStorage.setItem("Carrito", JSON.stringify(carrito))
+
 }
 
 
@@ -309,11 +235,13 @@ function vaciarCarrito() {
             'Cancelado',
             'Los productos no han sido removidos',
             'error'
-
           )
         }
       })
+      localStorage.setItem("Carrito", JSON.stringify(carrito))
+
 }
+
 
 
 // Eventos

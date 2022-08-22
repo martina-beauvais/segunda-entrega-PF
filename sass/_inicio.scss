@@ -1,0 +1,48 @@
+/* --- INICIO --- */
+.container-1{
+    .row{
+        .col-sm-7{
+            .card-banner{
+                padding-top: 40%;
+                margin-left:10%;
+                .card-title{
+                    text-align: center;
+                    text-decoration: underline;
+                }
+            }
+        }
+        .col-sm-5{
+            .buho-lector{
+                margin-top: 10%;
+                margin-left: 25%;
+            }
+        }
+    }
+}
+.container-section{
+    background-color: rgba(187,170,184,0.7);
+    margin-top:10%;
+    margin-bottom: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    .imagen-icon{
+        width: 70px;
+        height: 70px;
+    }
+}
+.container-2{
+    margin-top: 25%;
+    .card-title{
+        text-align: center;
+    }
+}
+.container-section2{
+    background-color: rgba(187,170,184,0.7);
+    margin-bottom: 25%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    .imagen-icon{
+        width: 70px;
+        height: 70px;
+    }
+}

@@ -1,0 +1,26 @@
+/* --- INDEX --- */
+main {
+    .container-1{
+        .row{
+            .col-sm-7{
+                .card-banner{
+                    padding-top: 40%;
+                    margin-left:10%;
+                    .submit{
+                        margin-left: 35%;
+                    }
+                }
+            }
+            .col-sm-5{
+                .buho-lector{
+                    margin-top: 10%;
+                    margin-left: 25%;
+                }
+            }
+        }
+        .dispositivos{
+            margin-left: 15%;
+            margin-top:5%;
+        }
+    }
+}

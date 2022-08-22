@@ -13,15 +13,15 @@ const usuarios = []
 const avatarperfil = document.getElementById("avatarPerfil")
 
 async function avatarUsuario(){
-  const avatar = await fetch('../JSON/avatar.json')
-  const avatarParseado = await avatar.json()
-  avatarParseado.forEach((src, indice) => {
+    const avatar = await fetch('../JSON/avatar.json')
+    const avatarParseado = await avatar.json()
+    avatarParseado.forEach((src, indice) => {
     avatarperfil.innerHTML += `
-    <img id="avatar${indice}" src="../avatar/${src.imagen}" alt=""
-    class="perfilUsuario"
-    style="width:70px; height: 70px;">
+        <img id="avatar${indice}" src="../avatar/${src.imagen}" alt=""
+        class="perfilUsuario"
+        style="width:70px; height: 70px;">
     `
-  })
+    })
 }
 
 const perfilUsuario = document.getElementById("perfilUsuario")

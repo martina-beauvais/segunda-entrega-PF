@@ -1,0 +1,44 @@
+/* --- FOOTER --- */
+footer {
+    height: auto;
+    width: 100%;
+    .col {
+        background-color: rgb(187, 170, 184); 
+        .h3 {
+            background-color: rgb(187, 170, 184);
+            text-decoration: underline;
+            font-size: 30px;
+            margin-left: 5%;
+            padding-top: 5%;
+        }
+        .item-one {
+            background-color: rgb(187, 170, 184);
+            font-size: 19px;
+            text-align: justify; 
+            margin-left: 10%;
+            .footer__nav {
+                color: black;
+                text-decoration: none;
+            }
+        }
+        .item-two {
+            font-size: 19px;
+            margin-left: 10%;
+            .footer__nav {
+                color: black;
+                text-decoration: none;
+            }
+        }
+    }
+    .copyright {
+        background-color: rgb(187, 170, 184);
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 10px; 
+    }
+    .copy-is{
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+}

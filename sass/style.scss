@@ -1,0 +1,14 @@
+* {/*Selector Universal*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import "header";
+@import "footer";
+@import "index";
+@import "inicio";
+@import "tienda";
+@import "perfil";
+@import "registrarse";
+@import "iniciar-sesion";
+@import "media-queries";
