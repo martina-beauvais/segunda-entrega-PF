@@ -26,7 +26,7 @@ formUsuarioIS.addEventListener('submit', (e) => {
 
    //SWEETALERT2 => Alert de bienvenida para el usuario con su username.
     Swal.fire({
-    title: `¡Bienvenido, ${usuario.username}!`,
+    title: `¡Bienvenido nuevamente, ${usuario.username}!`,
     confirmButtonText: '¡Gracias!',
     width: 600,
     padding: '3em',

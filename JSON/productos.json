@@ -1,5 +1,5 @@
 [
-    {"id": 0, "nombre": "Una Eduación Mortal", "autor": "Naomi Novik", "precio": 350, "stock": 456, "imagen":"../imagenes/libros/Una-Educacion-Mortal-Naomi-Novik.png"},
+    {"id": 0, "nombre": "Una Educación Mortal", "autor": "Naomi Novik", "precio": 350, "stock": 456, "imagen":"../imagenes/libros/Una-Educacion-Mortal-Naomi-Novik.png"},
     {"id": 1, "nombre": "Lore", "autor":"Alexandra Bracken", "precio": 400, "stock":1500, "imagen": "../imagenes/libros/lore.jpg.png"},
     {"id": 2, "nombre": "Renegados", "autor":"Marissa Meyer", "precio": 300, "stock": 21, "imagen":"../imagenes/libros/renegados.png"},
     {"id": 3, "nombre": "Matar Un Reino", "autor":"Alexandra Christo", "precio": 250, "stock": 50, "imagen":"../imagenes/libros/Matar-Un-Reino-Alexandra-Christo.png"},
