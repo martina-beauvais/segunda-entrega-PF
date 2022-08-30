@@ -1,4 +1,3 @@
-
 // --- MI CUENTA ---
 class Usuario {
     constructor(username, nombre, apellido, email, contraseña){
@@ -13,18 +12,15 @@ class Usuario {
 
 const usuarios = []
 
-const formUsuario = document.getElementById("idForm")
+const formUsuarioIS = document.getElementById("idFormIS")
 
-formUsuario.addEventListener('submit', (e) => {
+formUsuarioIS.addEventListener('submit', (e) => {
     e.preventDefault()
 
-    const username = document.getElementById("username").value;
-    const nombre = document.getElementById("nombre").value;
-    const apellido = document.getElementById("apellido").value;
-    const email = document.getElementById("email").value;
-
-    const usuario = new Usuario(username,nombre,apellido,email)
-      usuarios.push(usuario)
+    let username = document.getElementById("usernameIS").value;
+    let email = document.getElementById("emailIS").value;
+    let usuario = new Usuario(username,email)
+        usuarios.push(usuario)
 
     localStorage.setItem('Usuario', JSON.stringify(usuarios))
 
@@ -36,12 +32,10 @@ formUsuario.addEventListener('submit', (e) => {
     padding: '3em',
     color: 'black',
     background: '#fff url(../imagenes/img-extras/buho-lector-bienvenida.png)', 
-  })
-  
+    })
     console.log(usuarios)
     setTimeout(() => {
-    location.href="../pages/inicio.html"
-  }, 1000)
+        location.href="../pages/inicio.html"
+    }, 500)
 })
-guardarEnLocalStorage();
 

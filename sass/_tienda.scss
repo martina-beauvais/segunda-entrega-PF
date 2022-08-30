@@ -8,7 +8,21 @@
     margin-left:90%;
     .offcanvas-header{
         background-color: #e99e75;
+    }
+    li {
+        list-style: none;
+    }
+    .imagenEnCarrito{
+        width: 75px;
+        height: 115px;
+        display:flex;
+        flex-direction: row;
+        justify-content: right;
+    }
     
+    #contador{
+        width:10px;
+        text-align: center;
     }
 }
 .form-check{

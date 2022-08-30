@@ -74,6 +74,10 @@ footer {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 10px; }
+  footer .hr {
+    width: 40%;
+    margin-left: 30%;
+    text-align: center; }
 
 /* --- INDEX --- */
 main .container-1 .row .col-sm-7 .card-banner {
@@ -136,6 +140,17 @@ main .container-1 .dispositivos {
   margin-left: 90%; }
   .carrito .offcanvas-header {
     background-color: #e99e75; }
+  .carrito li {
+    list-style: none; }
+  .carrito .imagenEnCarrito {
+    width: 75px;
+    height: 115px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right; }
+  .carrito #contador {
+    width: 10px;
+    text-align: center; }
 
 .form-check {
   margin-left: 5%; }
@@ -150,16 +165,21 @@ main .container-1 .dispositivos {
     #productosEnCarrito .mb-5 .card-body {
       text-align: center; }
 
-/* --- PERFIL --- */
-#containerPerfil {
-  padding-top: 15%;
-  padding-bottom: 15%;
-  margin-left: 25%;
-  margin-right: 25%; }
-  #containerPerfil #gradientCustom {
-    background: linear-gradient(#e99e75, #292643); }
-  #containerPerfil #datosDelUsuario {
-    text-align: center; }
+/* --- CONTACTO --- */
+.contacto {
+  padding-top: 10%;
+  text-align: center;
+  text-decoration: underline; }
+
+#container3 {
+  padding-top: 5%;
+  margin-bottom: 10%; }
+  #container3 #contactoForm {
+    border: solid 5px #292643;
+    background-color: #bbaab8;
+    width: 580px;
+    height: 410px;
+    margin-left: 30%; }
 
 /* --- REGISTRARSE --- */
 .registrarse {
